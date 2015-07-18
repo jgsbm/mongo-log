@@ -1,0 +1,20 @@
+{
+  "name": "mongo-log",
+  "version": "0.0.0",
+  "authors": [
+    "Yusuke Mukai <opposite0302@gmail.com>"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "public/lib",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "honoka": "~3.3.5",
+    "jquery": "~2.1.4"
+  }
+}

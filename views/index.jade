@@ -1,0 +1,18 @@
+extends layout
+
+block content
+  h1 JGS EC-LOG
+  input(type='text', id='key')
+  input(type='submit', onclick='return search();')
+
+  script(type='text/javascript').
+    function search() {
+      var key = $("#key").val();
+      if(key == null || key == "") {
+        alert("Empty key is not allowed");
+        return false;
+      } else {
+        location.href = '/' + key;
+        return true;
+      }
+    }

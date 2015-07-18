@@ -1,0 +1,16 @@
+extends layout
+
+block content
+  h1 JGS EC-LOG
+  h2 接続情報
+  table(class='table table-hover')
+    each val, key in conf
+      tr
+        td= key
+        td= val
+  h2 データ一覧
+  table(class='table table-hover')
+    each doc, index in docs
+      tr
+        td= index + 1
+        td= JSON.stringify(doc)
