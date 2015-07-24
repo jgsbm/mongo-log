@@ -4,7 +4,7 @@ var mongoClient = require('mongodb').MongoClient;
 var assert = require('assert');
 var cfenv = require('cfenv');
 
-var conf = cfenv.getAppEnv().getServiceCreds('aws-mongo')
+var conf = cfenv.getAppEnv().getServiceCreds('AWS MongoDB - Secure Gateway')
 
 var url = 'mongodb://' + conf.host + ':' + conf.port + '/' + conf.database;
 
